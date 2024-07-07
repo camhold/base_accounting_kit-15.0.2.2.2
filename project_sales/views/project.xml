@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record model="ir.ui.view" id="project_button">
+		<field name="name">project.button</field>
+		<field name="model">project.project</field>
+		<field name="inherit_id" ref="project.edit_project"/>
+		<field name="arch" type="xml">
+			<xpath expr="//button[@name='613']" position="before">
+				<button name="action_project" string="Presupuestos" type="object" class="oe_stat_button" icon="fa-dollar">
+				</button>
+			</xpath>
+		</field>
+    </record>
+</odoo>
